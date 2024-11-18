@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Lebenslauf</title>
+    <style>
+        /* Grundlegende Stile */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5; /* Ändere hier den Hintergrund auf ein neutrales Grau oder setze auf Weiß (#ffffff) */
+        }
+
+        h1 {
+            text-align: center;
+            color: #007acc;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #007acc;
+            font-size: 1.3em;
+            margin-top: 20px;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 5px;
+        }
+
+        /* Glassmorphism für Sektionen */
+        .section {
+            background: rgba(255, 255, 255, 0.8); /* Hellerer Hintergrund für Glassmorphism */
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.6s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        img {
+            display: block;
+            margin: 10px auto;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        /* Stil für die Fähigkeiten */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #007acc;
+            color: #fff;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+        }
+
+        /* Hover-Effekt für Fähigkeiten */
+        ul li:hover {
+            background-color: #005f99;
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+
+        /* Download-Button mit Hover-Effekt */
+        .download-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: #005f99;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Unterschrift-Stil */
+        .signature {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lebenslauf</h1>
+
+    <!-- Download Button -->
+    <a href="Lebenslauf.pdf" class="download-btn" download="Lebenslauf.pdf">Lebenslauf herunterladen</a>
+    
+    <div class="section">
+        <h3>Persönliche Daten</h3>
+        <p><img src="Element28.png" alt="Profilbild" width="120"></p>
+        <p>Name: Max Mustermann</p>
+        <p>Adresse: Musterstraße 1, 12345 Musterstadt</p>
+        <p>Telefon: 01234 567890</p>
+        <p>E-Mail: max.mustermann@example.com</p>
+    </div>
+
+    <div class="section">
+        <h3>Berufserfahrung</h3>
+        <p>2023: Musterlösung</p>
+        <p>2024: Musterlösung</p>
+    </div>
+
+    <div class="section">
+        <h3>Musterlaufbahn</h3>
+        <p>- 2022 - 2023: Muster Studium, Universität Musterstadt</p>
+        <p>- 2023 - 2024: Muster Schulreife, Berufskolleg Musterstadt</p>
+    </div>
+
+    <div class="section">
+        <h3>Fähigkeiten</h3>
+        <ul>
+            <li>HTML-Grundkenntnisse</li>
+            <li>Teamarbeit</li>
+            <li>Problemlösungsfähigkeit</li>
+        </ul>
+    </div>
+
+    <div class="signature">
+        <p>Unterschrift:</p>
+        <p><img src="Element18.png" alt="Unterschrift" width="110"></p>
+    </div>
+</body>
+</html>
+
